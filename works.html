@@ -10,41 +10,43 @@
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
-    <div class="content-works wrapper">
+    <div class="wrapper">
       <header class="header">
         <div class="header__top">
           <div class="header__social">
-            <div class="social social_header">
+            <div class="social">
               <ul class="social__list">
                 <li class="social__item"><a class="social__link" href="https://vk.com/sashko_khr" target="_blank">
-                    <svg class="social__svg_header">
+                    <svg class="social__svg social__svg_fill">
                       <use xlink:href="#icon-vk"></use>
                     </svg></a></li>
                 <li class="social__item"><a class="social__link" href="https://github.com/KhromovAlex" target="_blank">
-                    <svg class="social__svg_header">
+                    <svg class="social__svg social__svg_fill">
                       <use xlink:href="#icon-github"></use>
                     </svg></a></li>
                 <li class="social__item"><a class="social__link" href="#">
-                    <svg class="social__svg_header">
+                    <svg class="social__svg social__svg_fill">
                       <use xlink:href="#icon-in"></use>
                     </svg></a></li>
               </ul>
             </div>
           </div>
           <div class="header__nav"><a class="header__nav-link" href="#">
-              <svg class="nav-link__svg">
+              <svg class="header__nav-svg">
                 <use xlink:href="#icon-hamburger"></use>
               </svg></a></div>
         </div>
         <div class="header__center">
-          <div class="profile profile_welcome">
-            <div class="avatar"><img class="avatar__img" src="img/welcome/ava.jpg"></div>
-            <div class="user-name">Александр Хромов</div>
-            <div class="profile__desc">Личный сайт веб разработчика</div>
+          <div class="header__avatar">
+            <div class="avatar"><img class="avatar__img" src="img/welcome/ava.jpg" alt="avatar"></div>
           </div>
-          <svg class="header__bg-svg">
-            <use xlink:href="#icon-portfolio_header"></use>
-          </svg>
+          <div class="header__user-name">Александр Хромов</div>
+          <div class="header__desc">Личный сайт веб разработчика</div>
+          <div class="header__bg">
+            <svg class="header__bg-svg">
+              <use xlink:href="#icon-portfolio_header"></use>
+            </svg>
+          </div>
         </div>
         <div class="header__bottom">
           <div class="header__arrow"><a class="arrow__link" href="#">
@@ -114,40 +116,42 @@
 
     </div>
     <footer class="footer">
-      <div class="footer__top">
+      <div class="footer__row">
         <div class="footer__nav">
-          <div class="main-nav">
+          <nav class="main-nav">
             <div class="main-nav__list">
               <div class="main-nav__item"><a class="main-nav__link" href="works.html">Мои работы</a></div>
               <div class="main-nav__item"><a class="main-nav__link" href="about.html">Обо мне</a></div>
               <div class="main-nav__item"><a class="main-nav__link" href="blog.html">Блог</a></div>
               <div class="main-nav__item"><a class="main-nav__link" href="#">Авторизация</a></div>
             </div>
-          </div>
+          </nav>
         </div>
         <div class="footer__social">
-          <div class="social">
+          <div class="social social_footer">
             <ul class="social__list">
               <li class="social__item"><a class="social__link" href="https://vk.com/sashko_khr" target="_blank">
-                  <svg class="social__svg_footer">
+                  <svg class="social__svg">
                     <use xlink:href="#icon-vk_round"></use>
                   </svg></a></li>
               <li class="social__item"><a class="social__link" href="https://github.com/KhromovAlex" target="_blank">
-                  <svg class="social__svg_footer">
+                  <svg class="social__svg">
                     <use xlink:href="#icon-github_round"></use>
                   </svg></a></li>
               <li class="social__item"><a class="social__link" href="#">
-                  <svg class="social__svg_footer">
+                  <svg class="social__svg">
                     <use xlink:href="#icon-in_round"></use>
                   </svg></a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="footer__bottom">
-        <div class="footer__about"><span class="footer__about-text">Я веб-разработчик из Осинников, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</span></div>
+      <div class="footer__row">
+        <div class="footer__about">
+          <div class="footer__about-text">Я веб-разработчик из Осинников, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>
+        </div>
         <div class="footer__copyright">
-          <div class="copyright"><span class="copyright__text">© Александр Хромов | создано с любовью в LoftSchool | 2017</span></div>
+          <div class="copyright">© Александр Хромов | создано с любовью в LoftSchool | 2017</div>
         </div>
       </div>
     </footer>
