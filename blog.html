@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
+    <div class="full-screen-menu">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="works.html"><span class="text-link_full-screen">Мои работы</span></a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="about.html"><span class="text-link_full-screen">Обо мне</span></a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="blog.html"><span class="text-link_full-screen">Блог</span></a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/#auth"><span class="text-link_full-screen">Авторизация</span></a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="wrapper">
       <header class="header">
         <div class="header__top">
@@ -31,13 +41,11 @@
               </ul>
             </div>
           </div>
-          <div class="header__nav">
-            <button class="header__nav-link" type="button">
-              <svg class="header__nav-svg">
-                <use xlink:href="img/sprite.svg#icon-hamburger"></use>
-              </svg>
-            </button>
-          </div>
+          <button class="header__nav header__nav-link" type="button">
+            <svg class="header__nav-svg">
+              <use xlink:href="img/sprite.svg#icon-hamburger"></use>
+            </svg>
+          </button>
         </div>
         <div class="header__center header__center_blog">
           <div class="header__avatar">
@@ -152,12 +160,12 @@
       <div class="footer__row">
         <div class="footer__nav">
           <nav class="main-nav">
-            <div class="main-nav__list">
-              <div class="main-nav__item"><a class="main-nav__link" href="works.html"><span class="text-link">Мои работы</span></a></div>
-              <div class="main-nav__item"><a class="main-nav__link" href="about.html"><span class="text-link">Обо мне</span></a></div>
-              <div class="main-nav__item"><a class="main-nav__link" href="blog.html"><span class="text-link">Блог</span></a></div>
-              <div class="main-nav__item"><a class="main-nav__link" href="#"><span class="text-link">Авторизация</span></a></div>
-            </div>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="works.html"><span class="text-link">Мои работы</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="about.html"><span class="text-link">Обо мне</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="blog.html"><span class="text-link">Блог</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="/#auth"><span class="text-link">Авторизация</span></a></li>
+            </ul>
           </nav>
         </div>
         <div class="footer__social">
