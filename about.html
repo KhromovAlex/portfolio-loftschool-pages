@@ -16,12 +16,15 @@
           <li class="main-nav__item"><a class="main-nav__link" href="works.html"><span class="text-link_full-screen">Мои работы</span></a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="about.html"><span class="text-link_full-screen">Обо мне</span></a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="blog.html"><span class="text-link_full-screen">Блог</span></a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="/portfolio-loftschool-pages/#auth"> <span class="text-link_full-screen">Авторизация</span></a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/#auth"><span class="text-link_full-screen">Авторизация</span></a></li>
         </ul>
       </nav>
     </div>
     <div class="wrapper">
       <header class="header">
+        <div class="parallax-scroll">
+          <div class="parallax-scroll__layer"><img class="parallax-scroll__img" src="img/header/bg_for_parallax.jpg"></div>
+        </div>
         <div class="header__top">
           <div class="header__social">
             <div class="social">
@@ -41,11 +44,7 @@
               </ul>
             </div>
           </div>
-          <button class="header__nav header__nav-link" type="button">
-            <svg class="header__nav-svg">
-              <use xlink:href="img/sprite.svg#icon-hamburger"></use>
-            </svg>
-          </button>
+          <button class="header__nav hamburger-header" id="hamburger-header" type="button"><span class="hamburger-header__line"></span><span class="hamburger-header__line"></span><span class="hamburger-header__line"></span></button>
         </div>
         <div class="header__center">
           <div class="header__avatar">
@@ -53,11 +52,6 @@
           </div>
           <div class="header__user-name">Александр Хромов</div>
           <div class="header__desc">Личный сайт веб разработчика</div>
-          <div class="header__bg">
-            <svg class="header__bg-svg">
-              <use xlink:href="img/sprite.svg#icon-portfolio_header"></use>
-            </svg>
-          </div>
         </div>
         <div class="header__bottom">
           <div class="header__arrow"><a class="arrow__link" href="#first-section">
@@ -67,29 +61,21 @@
         </div>
       </header>
       <section class="about">
-        <div class="triangle-about">
-          <svg class="triangle-about__svg" viewBox="0 0 1000 86" preserveAspectRatio="none">
-            <polygon class="triangle-about__svg-left" points="0,0 0,86 500.86,340 500.86,75.5"></polygon>
-            <polygon class="triangle-about__svg-right" points="1000,0 1000,86 500,86 500,75.5"></polygon>
-          </svg>
-        </div>
         <div class="about__left">
           <div class="about__left-title">
             <h2 class="title title_about_margin" id="first-section">Обо мне</h2>
           </div>
-          <div class="about__left-content">
-            <div class="user-desc">
-              <div class="user__photo">
-                <div class="avatar avatar_size avatar_border-radius_none"><img class="avatar__img" src="img/welcome/ava.jpg" alt="avatar"></div>
-              </div>
-              <div class="user-desc__title">
-                <h3 class="subtitle">кто я</h3>
-              </div>
-              <div class="user-desc__text">
-                <div class="text-content">
-                  <p>Я веб разработчик из Сибири. Мне 23 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
-                  <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!</p>
-                </div>
+          <div class="about__left-content user-desc">
+            <div class="user__photo">
+              <div class="avatar avatar_size avatar_border-radius_none"><img class="avatar__img" src="img/welcome/ava.jpg" alt="avatar"></div>
+            </div>
+            <div class="user-desc__title">
+              <h3 class="subtitle">кто я</h3>
+            </div>
+            <div class="user-desc__text">
+              <div class="text-content">
+                <p>Я веб разработчик из Сибири. Мне 23 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
+                <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!</p>
               </div>
             </div>
           </div>
@@ -116,27 +102,24 @@
                     <div class="skill__circle">
                       <svg class="circles" viewBox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55"></circle>
-                      </svg>
-                      <div class="skill__title">Html5</div>
+                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skill__title">Html5</span>
                     </div>
                   </li>
                   <li class="skills-row__item">
                     <div class="skill__circle">
                       <svg class="circles" viewBox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55"></circle>
-                      </svg>
-                      <div class="skill__title">css3</div>
+                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skill__title">css3</span>
                     </div>
                   </li>
                   <li class="skills-row__item">
                     <div class="skill__circle">
                       <svg class="circles" viewBox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55"></circle>
-                      </svg>
-                      <div class="skill__title">JavaScript</div>
+                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skill__title">JavaScript</span>
                     </div>
                   </li>
                 </ul>
@@ -152,36 +135,32 @@
                     <div class="skill__circle">
                       <svg class="circles" viewBox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55"></circle>
-                      </svg>
-                      <div class="skill__title">PHP</div>
+                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skill__title">PHP</span>
                     </div>
                   </li>
                   <li class="skills-row__item">
                     <div class="skill__circle">
                       <svg class="circles" viewBox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55"></circle>
-                      </svg>
-                      <div class="skill__title">mySQL</div>
+                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skill__title">mySQL</span>
                     </div>
                   </li>
                   <li class="skills-row__item">
                     <div class="skill__circle">
                       <svg class="circles" viewBox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55"></circle>
-                      </svg>
-                      <div class="skill__title">Node.js &amp; npm</div>
+                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skill__title">Node.js &amp; npm</span>
                     </div>
                   </li>
                   <li class="skills-row__item">
                     <div class="skill__circle">
                       <svg class="circles" viewBox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55"></circle>
-                      </svg>
-                      <div class="skill__title">Mongo.db</div>
+                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skill__title">Mongo.db</span>
                     </div>
                   </li>
                 </ul>
@@ -197,27 +176,24 @@
                     <div class="skill__circle">
                       <svg class="circles" viewBox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55"></circle>
-                      </svg>
-                      <div class="skill__title">Git</div>
+                        <circle class="circle__second circle-100" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skill__title">Git</span>
                     </div>
                   </li>
                   <li class="skills-row__item">
                     <div class="skill__circle">
                       <svg class="circles" viewBox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55"></circle>
-                      </svg>
-                      <div class="skill__title">Gulp</div>
+                        <circle class="circle__second circle-100" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skill__title">Gulp</span>
                     </div>
                   </li>
                   <li class="skills-row__item">
                     <div class="skill__circle">
                       <svg class="circles" viewBox="0 0 110 110">
                         <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55"></circle>
-                      </svg>
-                      <div class="skill__title">Bower</div>
+                        <circle class="circle__second circle-100" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                      </svg><span class="skill__title">Bower</span>
                     </div>
                   </li>
                 </ul>
@@ -228,7 +204,6 @@
       </section>
       <section class="map">
         <div class="map__google">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1183.7997264858889!2d87.33798673606992!3d53.60060825723373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1512794618212" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen></iframe>
           <div class="map__contacts">
             <h3 class="subtitle map__title">контакты</h3>
             <ul class="contacts">
@@ -258,6 +233,7 @@
               </li>
             </ul>
           </div>
+          <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1183.7997264858889!2d87.33798673606992!3d53.60060825723373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1512794618212" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen></iframe>
         </div>
       </section>
     </div>
@@ -269,7 +245,7 @@
               <li class="main-nav__item"><a class="main-nav__link" href="works.html"><span class="text-link">Мои работы</span></a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="about.html"><span class="text-link">Обо мне</span></a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="blog.html"><span class="text-link">Блог</span></a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="/portfolio-loftschool-pages/#auth"><span class="text-link">Авторизация</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="/#auth"><span class="text-link">Авторизация</span></a></li>
             </ul>
           </nav>
         </div>

@@ -16,12 +16,15 @@
           <li class="main-nav__item"><a class="main-nav__link" href="works.html"><span class="text-link_full-screen">Мои работы</span></a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="about.html"><span class="text-link_full-screen">Обо мне</span></a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="blog.html"><span class="text-link_full-screen">Блог</span></a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="/portfolio-loftschool-pages/#auth"> <span class="text-link_full-screen">Авторизация</span></a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/#auth"><span class="text-link_full-screen">Авторизация</span></a></li>
         </ul>
       </nav>
     </div>
     <div class="wrapper">
       <header class="header">
+        <div class="parallax-scroll">
+          <div class="parallax-scroll__layer"><img class="parallax-scroll__img" src="img/header/bg_for_parallax.jpg"></div>
+        </div>
         <div class="header__top">
           <div class="header__social">
             <div class="social">
@@ -41,11 +44,7 @@
               </ul>
             </div>
           </div>
-          <button class="header__nav header__nav-link" type="button">
-            <svg class="header__nav-svg">
-              <use xlink:href="img/sprite.svg#icon-hamburger"></use>
-            </svg>
-          </button>
+          <button class="header__nav hamburger-header" id="hamburger-header" type="button"><span class="hamburger-header__line"></span><span class="hamburger-header__line"></span><span class="hamburger-header__line">                                </span></button>
         </div>
         <div class="header__center header__center_blog">
           <div class="header__avatar">
@@ -53,20 +52,11 @@
           </div>
           <div class="header__title-wrap">
             <h1 class="title title_header">Блог</h1>
-            <svg class="header__bg-svg header__bg-svg_blog">
-              <use xlink:href="img/sprite.svg#icon-blog_header"></use>
-            </svg>
           </div>
           <div class="header__desc">Статьи, которые я написал</div>
         </div>
       </header>
       <div class="blog">
-        <div class="triangle-blog">
-          <svg class="triangle-blog__svg" viewBox="0 0 1000 86" preserveAspectRatio="none">
-            <polygon class="triangle-works__svg-left" points="0,0 0,86 500.86,340 500.86,75.5"></polygon>
-            <polygon class="triangle-works__svg-right" points="1000,0 1000,86 500,86 500,75.5"></polygon>
-          </svg>
-        </div>
         <aside class="nav-blog">
           <ul class="nav-blog__list">
             <li class="nav-blog__item"><a class="nav-blog__link nav-blog__link_active" href="#">Самое важное в SASS</a></li>
@@ -164,7 +154,7 @@
               <li class="main-nav__item"><a class="main-nav__link" href="works.html"><span class="text-link">Мои работы</span></a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="about.html"><span class="text-link">Обо мне</span></a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="blog.html"><span class="text-link">Блог</span></a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="/portfolio-loftschool-pages/#auth"><span class="text-link">Авторизация</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="/#auth"><span class="text-link">Авторизация</span></a></li>
             </ul>
           </nav>
         </div>
