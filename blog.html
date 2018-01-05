@@ -8,6 +8,7 @@
     <meta name="description" content="Описание сайта">
     <title>Блог</title>
     <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <div class="full-screen-menu">
@@ -58,14 +59,15 @@
       </header>
       <div class="blog">
         <aside class="nav-blog">
+          <button class="nav-blog__button" id="nav-blog__button"></button>
           <ul class="nav-blog__list">
-            <li class="nav-blog__item"><a class="nav-blog__link nav-blog__link_active" href="#">Самое важное в SASS</a></li>
-            <li class="nav-blog__item"><a class="nav-blog__link" href="#">Приёмы в вёрстке, без которых  не обходится ни один сайт</a></li>
-            <li class="nav-blog__item"><a class="nav-blog__link" href="#">Самый необходимый набор Gulp плагинов</a></li>
+            <li class="nav-blog__item"><a class="nav-blog__link nav-blog__link_active" href="#article-1">Самое важное в SASS</a></li>
+            <li class="nav-blog__item"><a class="nav-blog__link" href="#article-2">Приёмы в вёрстке, без которых  не обходится ни один сайт</a></li>
+            <li class="nav-blog__item"><a class="nav-blog__link" href="#article-3">Самый необходимый набор Gulp плагинов</a></li>
           </ul>
         </aside>
         <section class="blog-content">
-          <article class="article-blog">
+          <article class="article-blog" id="article-1">
             <h3 class="article-blog__title">Самое важное в SASS</h3>
             <div class="article-blog__time">22 ноября 2016</div>
             <div class="article-blog__text">
@@ -91,7 +93,7 @@
               </p>
             </div>
           </article>
-          <article class="article-blog">
+          <article class="article-blog" id="article-2">
             <h3 class="article-blog__title">Приёмы в вёрстке, без которых  не обходится ни один сайт</h3>
             <div class="article-blog__time">22 ноября 2016</div>
             <div class="article-blog__text">
@@ -117,7 +119,7 @@
               </p>
             </div>
           </article>
-          <article class="article-blog">
+          <article class="article-blog" id="article-3">
             <h3 class="article-blog__title">Самый необходимый набор Gulp плагинов</h3>
             <div class="article-blog__time">22 ноября 2016</div>
             <div class="article-blog__text">
@@ -186,6 +188,5 @@
         </div>
       </div>
     </footer>
-    <script src="js/main.js"></script>
   </body>
 </html>

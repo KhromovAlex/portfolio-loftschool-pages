@@ -8,6 +8,7 @@
     <meta name="description" content="Описание сайта">
     <title>Мои работы</title>
     <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <div class="full-screen-menu">
@@ -78,20 +79,31 @@
                 <div class="slider__button-svg"></div><span class="text-link">Посмотреть сайт</span></a></div>
           </div>
           <div class="slider__right-top">
-            <div class="slider-screen"><img class="slider-screen__img" src="img/works/slide.png"></div>
+            <div class="slider-screen">
+              <ul class="carousel-main">
+                <li class="carousel-main__slide active"><img class="slider-screen__img" src="img/works/slide1.png"></li>
+                <li class="carousel-main__slide"><img class="slider-screen__img" src="img/works/slide2.png"></li>
+                <li class="carousel-main__slide"><img class="slider-screen__img" src="img/works/slide3.png"></li>
+                <li class="carousel-main__slide"><img class="slider-screen__img" src="img/works/slide4.png"></li>
+              </ul>
+            </div>
           </div>
           <div class="slider__btns">
             <button class="previous-slide slider__link" id="previous">
-              <div class="slider__wrap-img"><img class="slider__img" src="img/works/slide-1.jpg"></div>
-              <svg class="slider__svg">
-                <use xlink:href="img/sprite.svg#icon-arrow_down"></use>
-              </svg>
+              <ul class="carousel-slides">
+                <li class="carousel-slides__slide carousel-slides__slide-previous"><img class="slider__img" src="img/works/slide1.png"></li>
+                <li class="carousel-slides__slide carousel-slides__slide-previous"><img class="slider__img" src="img/works/slide2.png"></li>
+                <li class="carousel-slides__slide carousel-slides__slide-previous"><img class="slider__img" src="img/works/slide3.png"></li>
+                <li class="carousel-slides__slide carousel-slides__slide-previous active"><img class="slider__img" src="img/works/slide4.png"></li>
+              </ul>
             </button>
             <button class="next-slide slider__link" id="next">
-              <div class="slider__wrap-img"><img class="slider__img" src="img/works/slide-2.jpg"></div>
-              <svg class="slider__svg">
-                <use xlink:href="img/sprite.svg#icon-portf_arrow_up"></use>
-              </svg>
+              <ul class="carousel-slides">
+                <li class="carousel-slides__slide carousel-slides__slide-next"><img class="slider__img" src="img/works/slide1.png"></li>
+                <li class="carousel-slides__slide carousel-slides__slide-next active"><img class="slider__img" src="img/works/slide2.png"></li>
+                <li class="carousel-slides__slide carousel-slides__slide-next"><img class="slider__img" src="img/works/slide3.png"></li>
+                <li class="carousel-slides__slide carousel-slides__slide-next"><img class="slider__img" src="img/works/slide4.png"></li>
+              </ul>
             </button>
           </div>
         </div>
@@ -204,6 +216,5 @@
         </div>
       </div>
     </footer>
-    <script src="js/main.js"></script>
   </body>
 </html>
