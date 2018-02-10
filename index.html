@@ -43,11 +43,11 @@
             <div class="welcome-content__social">
               <div class="social">
                 <ul class="social__list">
-                  <li class="social__item"><a class="social__link social__link_welcome" href="https://vk.com/sashko_khr" target="_blank">
+                  <li class="social__item"><a class="social__link social__link_welcome" href="https://vk.com/" target="_blank">
                       <svg class="social__svg">
                         <use xlink:href="img/sprite.svg#icon-vk"></use>
                       </svg></a></li>
-                  <li class="social__item"><a class="social__link social__link_welcome" href="https://github.com/KhromovAlex" target="_blank">
+                  <li class="social__item"><a class="social__link social__link_welcome" href="https://github.com/" target="_blank">
                       <svg class="social__svg">
                         <use xlink:href="img/sprite.svg#icon-github"></use>
                       </svg></a></li>
@@ -70,14 +70,15 @@
             <div class="welcome-auth__title">
               <div class="subtitle">Авторизируйтесь</div>
             </div>
-            <form class="welcome-auth__form">
+            <div class="status-login"></div>
+            <form class="welcome-auth__form" id="form-auth" method="POST">
               <div class="welcome-auth__login-wrap">
                 <div class="welcome-auth__input-bg">
                   <svg class="welcome-auth__svg-input">
                     <use xlink:href="img/sprite.svg#icon-login"></use>
                   </svg>
                 </div>
-                <input class="welcome-auth__input welcome-auth__login" type="text" placeholder="Логин">
+                <input class="welcome-auth__input welcome-auth__login" id="auth-login" name="login" type="text" placeholder="Логин">
               </div>
               <div class="welcome-auth__pass-wrap">
                 <div class="welcome-auth__input-bg">
@@ -85,7 +86,7 @@
                     <use xlink:href="img/sprite.svg#icon-password"></use>
                   </svg>
                 </div>
-                <input class="welcome-auth__input welcome-auth__pass" type="text" placeholder="Пароль">
+                <input class="welcome-auth__input welcome-auth__pass" id="auth-password" name="password" type="password" placeholder="Пароль">
               </div>
               <div class="welcome-auth__checkbox-wrap">
                 <input class="welcome-auth__checkbox" type="checkbox" id="checkbox-auth">
@@ -118,7 +119,7 @@
                     <button class="welcome-nav__link welcome-nav__link_auth" id="go-home-welcome" type="button"><span class="text-link">На главную</span></button>
                   </li>
                   <li class="welcome-nav__item welcome-nav__link_auth">
-                    <button class="welcome-nav__link welcome-nav__link_auth" type="submit"><span class="text-link">Вход</span></button>
+                    <button class="welcome-nav__link welcome-nav__link_auth" type="submit" id="submit-auth"><span class="text-link">Вход</span></button>
                   </li>
                 </ul>
               </nav>
@@ -128,7 +129,7 @@
       </div>
       <footer class="footer-welcome">
         <div class="footer-welcome__copyright">
-          <div class="copyright-welcome">© Александр Хромов | создано с любовью в LoftSchool | 2017</div>
+          <div class="copyright-welcome">© Александр Хромов | 2018</div>
         </div>
       </footer>
     </div>
